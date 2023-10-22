@@ -1,4 +1,4 @@
-package one.digitalinnovation.gof;
+package edu.ariane.gof;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +13,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * - OpenFeign
  * 
  * @author falvojr
+ * Projeto utilizado como base
  */
 @EnableFeignClients
 @SpringBootApplication

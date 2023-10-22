@@ -9,7 +9,7 @@
 		<version>2.5.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>digitalinnovation.one</groupId>
+	<groupId>edu.ariane</groupId>
 	<artifactId>lab-padroes-projeto-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lab-padroes-projeto-spring</name>

@@ -1,10 +1,10 @@
-package one.digitalinnovation.gof.service;
+package edu.ariane.gof.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import one.digitalinnovation.gof.model.Endereco;
+import edu.ariane.gof.model.DefinitionWord;
 
 /**
  * Client HTTP, criado via <b>OpenFeign</b>, para o consumo da API do
@@ -15,9 +15,9 @@ import one.digitalinnovation.gof.model.Endereco;
  * 
  * @author falvojr
  */
-@FeignClient(name = "viacep", url = "https://viacep.com.br/ws")
-public interface ViaCepService {
+@FeignClient(name = "dictionaryapi", url = "https://api.dictionaryapi.dev/api/v2/entries/en")
+public interface DictionaryService {
 
-	@GetMapping("/{cep}/json/")
-	Endereco consultarCep(@PathVariable("cep") String cep);
+	@GetMapping("/{word}")
+	DefinitionWord consultarPalavra(@PathVariable("word") String word);
 }
